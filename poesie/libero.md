@@ -1,0 +1,15 @@
+---
+layout: poesia
+title: Libero
+---
+
+Sono un palloncino che vola via,  
+Una mongolfiera che sale in cielo,  
+Un uccello che vola tra le nuvole.  
+Sono un'aquila che cerca la sua cena,  
+Un topo che trova del formaggio,  
+L'acqua di un fiume,  
+una persona con uno scopo!  
+
+[<-](primavera.html)
+
