@@ -7,11 +7,11 @@ title: poesie
 
 ## uni
 
-	- [vuoto e pieno](vuoto_e_pieno.md)
-	- [luna](luna.md)
-	- [uomo](uomo.md)
-	- [treno](treno.md)
-	- [aereo](aereo.md)
-	- [slippery slope](abisso.md)
-	- [pacifico](pacifico.md)
-	- [primavera](primavera.md)
+	- [vuoto e pieno](poesie/vuoto_e_pieno.md)
+	- [luna](poesie/luna.md)
+	- [uomo](poesie/uomo.md)
+	- [treno](poesie/treno.md)
+	- [aereo](poesie/aereo.md)
+	- [slippery slope](poesie/abisso.md)
+	- [pacifico](poesie/pacifico.md)
+	- [primavera](poesie/primavera.md)
