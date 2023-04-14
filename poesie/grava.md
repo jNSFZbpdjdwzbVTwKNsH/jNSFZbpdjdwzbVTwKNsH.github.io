@@ -1,0 +1,13 @@
+---
+layout: poesia
+title: Grava
+---
+
+È giugno,  
+Non c'è vento,  
+Il male di vivere:  
+il sole e i sassi e l'afa.  
+Ma fiumeggia, dalle montagne,  
+acqua troppo fredda  
+  
+[->](aprilia.html)
