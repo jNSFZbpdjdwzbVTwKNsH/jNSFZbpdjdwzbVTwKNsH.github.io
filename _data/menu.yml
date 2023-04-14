@@ -4,11 +4,13 @@
 entries:
   - title: poesie
     url: poesie/poesie
+
   - title: diario
     post_list:
       limit: 3
+      category: diario
       show_more: true
-      show_more_text: "  altri post..."
+      show_more_text: altri post...
       show_more_url: diario.html
 
         #  - title: posts by category
