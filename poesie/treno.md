@@ -1,11 +1,14 @@
 ---
-layout: page
+layout: poesia
 title: Treno
 ---
 
-che strano essere a casa
-e prendere un treno
-per tornare a casa
-che strano mezzo il treno:
-mi mette estrema calma, tranquillità e staticità.
-Yet it moves so fast!
+che strano essere a casa  
+e prendere un treno  
+per tornare a casa  
+che strano mezzo il treno:  
+mi mette estrema calma, tranquillità e staticità.  
+Yet it moves so fast!  
+
+
+[<-](uomo.html) [->](bimbo.html)

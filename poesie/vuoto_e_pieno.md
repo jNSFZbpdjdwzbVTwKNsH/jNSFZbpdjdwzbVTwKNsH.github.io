@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: poesia
 title: Vuoto e Pieno
 ---
 
@@ -9,3 +9,6 @@ sono una medusa (che si apre e si chiude)
 sono il fumo di una sigaretta che si espande e disperde,  
 un fiume che scorre e scompare,  
 sono una fiamma che divampa e divora e si distrugge  
+  
+
+[<-](living_nature.html) [->](luna.html)

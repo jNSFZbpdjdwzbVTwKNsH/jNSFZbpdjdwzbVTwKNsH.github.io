@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: poesia
 title: Pacifico
 ---
 
@@ -9,3 +9,6 @@ in un letto soffice
 abbracciato ad una persona splendida  
 
 (legno caldo)  
+
+
+[<-](abisso.html) [->](primavera.html)
