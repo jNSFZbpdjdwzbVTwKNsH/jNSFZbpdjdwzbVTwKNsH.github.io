@@ -11,4 +11,4 @@ l'amore è un processo di spogliamento (copilot)
 ma possono capitare delle raffiche)  
 
 
-[<-](pacifico.html) [->](libero.html)
+[<-](pacifico.html) [->](libero.html)  
