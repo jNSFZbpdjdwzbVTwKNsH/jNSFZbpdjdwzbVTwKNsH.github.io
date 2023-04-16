@@ -2,16 +2,16 @@
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
 entries:
+
   - title: poesie
-    url: poesie/poesie
+    url: poesie
 
   - title: diario
-    post_list:
-      limit: 3
-      category: diario
-      show_more: true
-      show_more_text: altri post...
-      show_more_url: diario.html
+    url: diario
+
+  - title: pensieri
+    url: riflessioni
+
 
         #  - title: posts by category
         #    post_list:

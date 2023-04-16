@@ -1,12 +1,10 @@
 ---
 layout: post
 title: Living Nature
-category: poesie
+category: poesia
 ---
 
 Un palo grigo sta(nte) tra  
 alberi verdi  
 gli uccellini ci si appoggiano:  
 loro non vedono che l'albero è still living  
-
-[<-](aprilia.html) [->](vuoto_e_pieno.html)

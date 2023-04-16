@@ -1,12 +1,10 @@
 ---
 layout: post
 title: Slippery Slope
-category: poesie
+category: poesia
 ---
 
 sto precipitando  
 nel tuo abisso  
 sempre più  
 velocemente   
-  
-[<-](aereo.html) [->](pacifico.html)

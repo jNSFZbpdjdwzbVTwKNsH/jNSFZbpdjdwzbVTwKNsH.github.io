@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Primavera
-category: poesie
+category: poesia
 ---
 
 L'amore spoglia una persona  
@@ -10,6 +10,3 @@ come il mare leviga la roccia,
 l'amore è un processo di spogliamento (copilot)  
 (tendenzialmente con calma e costanza,  
 ma possono capitare delle raffiche)  
-
-
-[<-](pacifico.html) [->](libero.html)  
