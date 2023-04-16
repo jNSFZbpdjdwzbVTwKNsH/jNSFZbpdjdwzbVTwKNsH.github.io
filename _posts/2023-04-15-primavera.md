@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Primavera
-category: poesia
+category: poesie
 ---
 
 L'amore spoglia una persona  

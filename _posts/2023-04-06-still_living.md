@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Living Nature
-category: poesia
+category: poesie
 ---
 
 Un palo grigo sta(nte) tra  

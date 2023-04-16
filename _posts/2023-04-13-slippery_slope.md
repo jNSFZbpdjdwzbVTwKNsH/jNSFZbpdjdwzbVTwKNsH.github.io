@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Slippery Slope
-category: poesia
+category: poesie
 ---
 
 sto precipitando  

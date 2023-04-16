@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vuoto e Pieno
-category: poesia
+category: poesie
 ---
 
 sono una foglia al vento,  
