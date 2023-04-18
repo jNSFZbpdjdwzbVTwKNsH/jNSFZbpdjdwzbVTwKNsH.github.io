@@ -1,5 +1,5 @@
 ---
 layout: archive
 title: Pensieri
-which_category: riflessioni
+which_category: pensieri
 ---
