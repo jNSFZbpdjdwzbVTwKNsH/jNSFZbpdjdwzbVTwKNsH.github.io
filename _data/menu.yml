@@ -12,6 +12,9 @@ entries:
   - title: pensieri
     url: pensieri
 
+      # - title: riflessioni
+      #   url: riflessioni
+
 
         #  - title: posts by category
         #    post_list:
