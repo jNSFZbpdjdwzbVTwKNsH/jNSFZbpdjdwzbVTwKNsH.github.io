@@ -25,3 +25,16 @@ sass:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+collections:
+  diario:
+    output: true
+
+  pensieri:
+    output: true
+
+  poesie:
+    output: true
+
+  riflessioni:
+    output: true
