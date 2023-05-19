@@ -9,12 +9,12 @@ Ogni tanto mi sembra di essere su quel treno.
 
 Ogni tanto il treno si muove alla stessa velocità delle cose fuori di esso.  
 Ogni tanto è troppo veloce e sbocco.  
-Ogni tanto è lento, 
+Ogni tanto è lento,  
 e sento le costole rompersi,  
 una ad una.  
 
-Alcune volte mi travesto da capotreno,
-ma lo so che la toga non fa il monaco.
+Alcune volte mi travesto da capotreno,  
+ma lo so che la toga non fa il monaco.  
 
 A volte ho l'impressione che il treno mi passi sopra.  
 A volte ho l'impressione di essere sopra il treno.  
