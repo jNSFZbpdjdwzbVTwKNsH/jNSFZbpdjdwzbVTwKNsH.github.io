@@ -4,16 +4,16 @@
 entries:
 
   - title: poesie
-    url: poesie
+    url: poesia
 
   - title: diario
-    url: diario
+    url: pagina
 
   - title: pensieri
-    url: pensieri
+    url: pensiero
 
       # - title: riflessioni
-      #   url: riflessioni
+      #   url: riflessione
 
 
         #  - title: posts by category

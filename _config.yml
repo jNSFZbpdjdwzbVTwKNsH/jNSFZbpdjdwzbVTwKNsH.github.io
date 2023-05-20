@@ -26,14 +26,14 @@ plugins:
   - jekyll-seo-tag
 
 collections:
-  diario:
+  pagina:
     output: true
 
-  pensieri:
+  pensiero:
     output: true
 
-  poesie:
+  poesia:
     output: true
 
-  riflessioni:
+  riflessione:
     output: true
