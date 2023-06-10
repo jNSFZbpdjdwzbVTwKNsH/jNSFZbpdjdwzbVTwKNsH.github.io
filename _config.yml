@@ -37,3 +37,6 @@ collections:
 
   riflessione:
     output: true
+
+  libro:
+    output: true

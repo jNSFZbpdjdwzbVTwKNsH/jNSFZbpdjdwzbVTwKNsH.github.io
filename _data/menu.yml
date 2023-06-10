@@ -12,8 +12,11 @@ entries:
   - title: pensieri
     url: pensiero
 
-      # - title: riflessioni
-      #   url: riflessione
+      #- title: riflessioni
+      #  url: riflessione
+
+      #- title: libri
+      #  url: libro
 
 
         #  - title: posts by category
