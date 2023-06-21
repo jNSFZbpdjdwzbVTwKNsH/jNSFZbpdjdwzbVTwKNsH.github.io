@@ -4,13 +4,13 @@
 entries:
 
   - title: poesie
-    url: poesia.html
+    url: poesia
 
   - title: diario
-    url: pagina.html
+    url: pagina
 
   - title: pensieri
-    url: pensiero.html
+    url: pensiero
 
       #- title: riflessioni
       #  url: riflessione
