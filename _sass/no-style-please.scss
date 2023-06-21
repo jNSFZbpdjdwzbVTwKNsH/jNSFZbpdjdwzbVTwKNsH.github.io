@@ -22,7 +22,7 @@ body[a="dark"] { @include dark-appearance; }
   /* Other background properties you might need */
 }
 
-html, body { background: white; }
+html, body { background: #ff8c69; }
 
 html { height: 100%; }
 
@@ -35,7 +35,7 @@ body {
   min-height: 100%;
   overflow-wrap: break-word;
   text-align: justify;
-  background: white;
+  // background: white; 
 }
 
 .post-meta { text-align: right; }
