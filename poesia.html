@@ -1,142 +1,14 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+---
+layout: default
+---
 
-  <title>Somebody's Blog!</title><!-- Begin Jekyll SEO tag v2.7.1 -->
-<meta name="generator" content="Jekyll v3.9.3" />
-<meta property="og:title" content="Somebody’s Blog!" />
-<meta name="author" content="somebody" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Uno stralcio della vita e dei pensieri di qualcuno, dal suo punto di vista" />
-<meta property="og:description" content="Uno stralcio della vita e dei pensieri di qualcuno, dal suo punto di vista" />
-<link rel="canonical" href="https://jnsfzbpdjdwzbvtwknsh.github.io/poesia" />
-<meta property="og:url" content="https://jnsfzbpdjdwzbvtwknsh.github.io/poesia" />
-<meta property="og:site_name" content="Somebody’s Blog!" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Somebody’s Blog!" />
-<script type="application/ld+json">
-{"headline":"Somebody’s Blog!","url":"https://jnsfzbpdjdwzbvtwknsh.github.io/poesia","author":{"@type":"Person","name":"somebody"},"description":"Uno stralcio della vita e dei pensieri di qualcuno, dal suo punto di vista","@type":"WebPage","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-<link type="application/atom+xml" rel="alternate" href="https://jnsfzbpdjdwzbvtwknsh.github.io/feed.xml" title="Somebody's Blog!" /><link rel="shortcut icon" type="image/x-icon" href="/logo.png" />
-  <link rel="stylesheet" href="/assets/css/main.css" />
-</head><body a="auto">
-    <main class="page-content" aria-label="Content">
-      <div class="w">
-        <a href="/"><--</a>
+{%-include back_link.html-%}
 <h1> Poesie </h1>
 
-
+{% for page in site.poesia reversed %}
 	<ul>
-		<p><a href="/poesia/2023-06-21.html">Bambina</a></p>
+		<p><a href="{{ page.url}}.html">{{ page.title }}</a></p>
 	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-06-20.html">Gatto</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-06-15.html">Mare</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-05-30.html">Diamante</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-05-19-snowpiercer.html">Snowpiercer</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-05-19-poesie.html">Chiodi</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-05-19-mondo.html">Mondo</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-05-19-lontano.html">Lontano</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-05-19-immobile.html">Immobile</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-05-12-poesie.html">Tempo</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-04-26-poesie.html">Nomade</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-04-24-poesie.html">Nel Blu</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-04-21-vita.html">Vita</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-04-17-poesie.html">Morte</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-04-16-libero.html">Libero</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-04-15-amore.html">Amore</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-04-14-pacifico.html">Pacifico</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-04-13-slippery_slope.html">Slippery Slope</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-04-12-aereo.html">Aereo</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-04-11-bimbo.html">Bimbo</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-04-10-treno.html">Treno</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-04-08-luna.html">Luna</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-04-07-vuoto_e_pieno.html">Vuoto e Pieno</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-04-06-still_living.html">Living Nature</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-04-05-aprilia.html">Aprilia</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/poesia/2023-04-04-grava.html">Grava</a></p>
-	</ul>
+{% endfor %}
 
 
-
-
-      </div>
-    </main>
-  </body>
-  <script async data-id="101414830" src="//static.getclicky.com/js"></script>
-</html>

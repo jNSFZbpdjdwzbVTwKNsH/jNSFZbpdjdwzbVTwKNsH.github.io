@@ -1,92 +1,12 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+---
+layout: default
+---
 
-  <title>Somebody's Blog!</title><!-- Begin Jekyll SEO tag v2.7.1 -->
-<meta name="generator" content="Jekyll v3.9.3" />
-<meta property="og:title" content="Somebody’s Blog!" />
-<meta name="author" content="somebody" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Uno stralcio della vita e dei pensieri di qualcuno, dal suo punto di vista" />
-<meta property="og:description" content="Uno stralcio della vita e dei pensieri di qualcuno, dal suo punto di vista" />
-<link rel="canonical" href="https://jnsfzbpdjdwzbvtwknsh.github.io/pensiero" />
-<meta property="og:url" content="https://jnsfzbpdjdwzbvtwknsh.github.io/pensiero" />
-<meta property="og:site_name" content="Somebody’s Blog!" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Somebody’s Blog!" />
-<script type="application/ld+json">
-{"headline":"Somebody’s Blog!","url":"https://jnsfzbpdjdwzbvtwknsh.github.io/pensiero","author":{"@type":"Person","name":"somebody"},"description":"Uno stralcio della vita e dei pensieri di qualcuno, dal suo punto di vista","@type":"WebPage","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-<link type="application/atom+xml" rel="alternate" href="https://jnsfzbpdjdwzbvtwknsh.github.io/feed.xml" title="Somebody's Blog!" /><link rel="shortcut icon" type="image/x-icon" href="/logo.png" />
-  <link rel="stylesheet" href="/assets/css/main.css" />
-</head><body a="auto">
-    <main class="page-content" aria-label="Content">
-      <div class="w">
-        <a href="/"><--</a>
+{%-include back_link.html-%}
 <h1> Pensieri </h1>
 
-
+{% for page in site.pensiero reversed %}
 	<ul>
-		<p><a href="/pensiero/2023-06-18.html">Riposino</a></p>
+		<p><a href="{{ page.url}}.html">{{ page.title }}</a></p>
 	</ul>
-
-	<ul>
-		<p><a href="/pensiero/2023-06-18-sessione.html">Sessione</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/pensiero/2023-06-17.html">Il Mostro</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/pensiero/2023-05-22.html">Uni, aperto e sigarette</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/pensiero/2023-05-10-pensieri.html">periodi</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/pensiero/2023-05-08-pensieri.html">sogni</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/pensiero/2023-05-02-pensieri.html">suggerimenti e rancore</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/pensiero/2023-05-01-pensieri.html">esagerare</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/pensiero/2023-04-29-pensieri.html">Estina</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/pensiero/2023-04-24-pensieri.html">carteggio e sogni</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/pensiero/2023-04-21-pensieri.html">sogni</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/pensiero/2023-04-20-pensieri.html">geopolitica spicciola</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/pensiero/2023-04-18-pensieri.html">Estina</a></p>
-	</ul>
-
-	<ul>
-		<p><a href="/pensiero/2023-04-16-pensieri.html">Estina</a></p>
-	</ul>
-
-
-      </div>
-    </main>
-  </body>
-  <script async data-id="101414830" src="//static.getclicky.com/js"></script>
-</html>
+{% endfor %}

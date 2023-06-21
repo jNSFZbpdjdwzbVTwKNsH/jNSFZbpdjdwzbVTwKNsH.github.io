@@ -1,40 +1,12 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+---
+layout: default
+---
 
-  <title>Somebody's Blog!</title><!-- Begin Jekyll SEO tag v2.7.1 -->
-<meta name="generator" content="Jekyll v3.9.3" />
-<meta property="og:title" content="Somebody’s Blog!" />
-<meta name="author" content="somebody" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Uno stralcio della vita e dei pensieri di qualcuno, dal suo punto di vista" />
-<meta property="og:description" content="Uno stralcio della vita e dei pensieri di qualcuno, dal suo punto di vista" />
-<link rel="canonical" href="https://jnsfzbpdjdwzbvtwknsh.github.io/libro" />
-<meta property="og:url" content="https://jnsfzbpdjdwzbvtwknsh.github.io/libro" />
-<meta property="og:site_name" content="Somebody’s Blog!" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Somebody’s Blog!" />
-<script type="application/ld+json">
-{"headline":"Somebody’s Blog!","url":"https://jnsfzbpdjdwzbvtwknsh.github.io/libro","author":{"@type":"Person","name":"somebody"},"description":"Uno stralcio della vita e dei pensieri di qualcuno, dal suo punto di vista","@type":"WebPage","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-<link type="application/atom+xml" rel="alternate" href="https://jnsfzbpdjdwzbvtwknsh.github.io/feed.xml" title="Somebody's Blog!" /><link rel="shortcut icon" type="image/x-icon" href="/logo.png" />
-  <link rel="stylesheet" href="/assets/css/main.css" />
-</head><body a="auto">
-    <main class="page-content" aria-label="Content">
-      <div class="w">
-        <a href="/"><--</a>
+{%-include back_link.html-%}
 <h1> Libri </h1>
 
-
+{% for page in site.libro reversed %}
 	<ul>
-		<p><a href="/libro/2023-06-10.html">10/06 La strategia della tensione</a></p>
+		<p><a href="{{ page.url}}.html">{{ page.title }}</a></p>
 	</ul>
-
-
-      </div>
-    </main>
-  </body>
-  <script async data-id="101414830" src="//static.getclicky.com/js"></script>
-</html>
+{% endfor %}
