@@ -1,6 +1,6 @@
 // -------------- THEME SWITCHER -------------- //
 @mixin dark-appearance {
-//  filter: invert(1);
+  filter: invert(1);
 }
 
 body[a="dark"] { @include dark-appearance; }
