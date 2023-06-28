@@ -12,12 +12,14 @@ entries:
   - title: pensieri
     url: pensiero
 
-      #- title: riflessioni
-      #  url: riflessione
-
-      #- title: libri
-      #  url: libro
-
+      #  - title: riflessioni
+      #    url: riflessione
+      #
+      #  - title: libri
+      #    url: libro
+      #
+      #  - title: Estina
+      #    url: estina
 
         #  - title: posts by category
         #    post_list:

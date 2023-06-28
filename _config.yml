@@ -40,3 +40,6 @@ collections:
 
   libro:
     output: true
+
+  estina:
+    output: true

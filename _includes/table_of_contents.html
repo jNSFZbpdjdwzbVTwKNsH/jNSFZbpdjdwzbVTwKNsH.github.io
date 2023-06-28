@@ -1,0 +1,13 @@
+{%-include back_link.html-%}
+
+{%-if page.category -%}
+	{%- assign topic = site.{{ page.category }} -%}
+{%-endif-%}
+
+<h1> {{ page.category }} </h1>
+
+{% for page in site.estina reversed %}
+	<ul>
+		<p><a href="{{ page.url}}">{{ page.title }}</a></p>
+	</ul>
+{% endfor %}
