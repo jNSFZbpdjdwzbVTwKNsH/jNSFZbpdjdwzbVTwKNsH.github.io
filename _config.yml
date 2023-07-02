@@ -43,3 +43,6 @@ collections:
 
   estina:
     output: true
+
+  monica:
+    output: true
