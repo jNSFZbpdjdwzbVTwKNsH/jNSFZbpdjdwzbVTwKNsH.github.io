@@ -1,0 +1,15 @@
+<p> {{ include.collection }} </p>
+
+
+{% assign posts = site.collections | where: "label", include.collection | %}
+
+{% for post in posts %}
+	<ul> {{ post }} </ul>
+{% endfor %}
+
+
+{% for page in site.collections | where: "label", include.collection | %}
+	<ul>
+		<p><a href="{{ page.url}}">{{ page.title }}</a></p>
+	</ul>
+{% endfor %}
