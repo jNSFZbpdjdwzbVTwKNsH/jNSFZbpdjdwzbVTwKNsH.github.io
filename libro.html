@@ -1,11 +1,6 @@
 ---
-layout: default-bis
+layout: collection-archive
+title: Libri
+which_collection: libro
 ---
 
-<h1> Libri </h1>
-
-{% for page in site.libro reversed %}
-	<ul>
-		<p><a href="{{ page.url}}">{{ page.title }}</a></p>
-	</ul>
-{% endfor %}

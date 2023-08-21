@@ -1,11 +1,5 @@
 ---
-layout: default-bis
+layout: collection-archive
+title: Diario
+which_collection: pagina
 ---
-
-<h1> Diario </h1>
-
-{% for page in site.pagina reversed %}
-	<ul>
-		<p><a href="{{ page.url}}">{{ page.title }}</a></p>
-	</ul>
-{% endfor %}
