@@ -3,9 +3,11 @@ layout: default-bis
 ---
 
 <h2>{{ page.title }}</h2>
+<article class="body">
 {{ content }}
+</article>
 
-<br>
+
 {% if page.previous.url %}
   <a class="page-link" href="{{ page.previous.url | relative_url }}"
 	  data-toggle="tooltip" data-placement="top" title="{{page.previous.title |

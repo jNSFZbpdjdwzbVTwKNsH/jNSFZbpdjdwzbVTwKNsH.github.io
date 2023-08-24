@@ -10,10 +10,3 @@ layout: default
   </div>
 
 </article>
-{% if page.previous.url %}
-  <a class="page-link" href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title | strip_html | xml_escape}}">&larr; Previous Post</a>
-{% endif %}
-{% if page.next.url %}
-  <a class="page-link" href="{{ page.next.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title | strip_html | xml_escape}}">Next Post &rarr;</a>
-{% endif %}
-

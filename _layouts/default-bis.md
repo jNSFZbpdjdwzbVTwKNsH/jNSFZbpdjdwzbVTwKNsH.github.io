@@ -7,7 +7,10 @@
 
       <div class="w">
         {%-include top_bar.html-%}
+        <div class="spacer"></div>
+        <div class="rettangolo">
         {{ content }}
+        </div>
       </div>
     </main>
 
