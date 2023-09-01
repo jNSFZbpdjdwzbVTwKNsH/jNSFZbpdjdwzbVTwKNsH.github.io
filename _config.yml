@@ -49,3 +49,7 @@ collections:
 
   weav:
     output: true
+
+  modella:
+    output: true
+
