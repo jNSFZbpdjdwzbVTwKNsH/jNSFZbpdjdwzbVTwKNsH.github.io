@@ -53,3 +53,5 @@ collections:
   modella:
     output: true
 
+  lettera:
+    output: true

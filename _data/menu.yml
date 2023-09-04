@@ -26,6 +26,9 @@ entries:
       #    
       #  - title: Modella
       #    url: modella
+      #    
+      #  - title: Lettere
+      #    url: lettera
 
         #  - title: posts by category
         #    post_list:
