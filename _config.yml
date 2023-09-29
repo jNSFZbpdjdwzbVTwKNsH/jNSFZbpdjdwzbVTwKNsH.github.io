@@ -55,3 +55,6 @@ collections:
 
   lettera:
     output: true
+
+  attivita:
+    output: true

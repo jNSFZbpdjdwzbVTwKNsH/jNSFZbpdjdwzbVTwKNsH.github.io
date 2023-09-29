@@ -2,17 +2,14 @@
 layout: home
 ---
 
+## [riflessioni](riflessione)
+## [attivita](attivita)
+## [libri](libro)
 ## [poesie](poesia)  
 ## [diario](pagina)  
 ## [pensieri](pensiero)  
-
-<!--
-## [riflessioni](riflessione)
-## [libri](libro)
+## [lettera](lettera)
+## [Weav](weav)
 ## [Estina](estina)
 ## [Monica](monica)
 ## [Modella](modella)
-## [lettera](lettera)
-## [Weav](weav)
-## [attivita](attivita)
--->

@@ -1,7 +1,11 @@
 {% assign posts = site.collections | where: "label", include.collection | first %}
 
 {% for page in posts.docs reversed %}
-	<ul>
-		<p><a href="{{ page.url}}">{{ page.title }}</a></p>
-	</ul>
+
+	<!-- Skip the index page -->
+	{%-if page.url contains "index" -%}
+	{%- continue -%}
+	{%- endif -%}
+
+	<p><a href="{{ page.url}}">{{ page.title }}</a></p>
 {% endfor %}
