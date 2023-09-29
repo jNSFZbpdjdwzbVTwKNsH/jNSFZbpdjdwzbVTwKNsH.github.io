@@ -1,7 +1,9 @@
 ---
-layout: page-private
-title: Blog
+layout: default-bis
 ---
+
+# [Attività](index)
+## Blog
 
 | what | how long |
 | --- | --- |

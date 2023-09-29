@@ -1,5 +1,5 @@
 ---
-layout: default-private
+layout: default-bis
 ---
 
 # Attività
@@ -15,3 +15,4 @@ layout: default-private
 | scrivere a qualcuno | eh |
 | concerto o festival | > 3h |
 | serie TV o anime | 20 min - > |
+| youtube | 20 min - > |

@@ -1,7 +1,10 @@
 ---
-layout: page-private
-title: Casa
+layout: default-bis
 ---
+
+# [Attività](index)
+
+## Casa
 
 | what | how long |
 | --- | --- |

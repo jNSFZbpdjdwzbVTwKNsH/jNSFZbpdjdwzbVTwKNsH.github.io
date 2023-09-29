@@ -1,7 +1,10 @@
 ---
-layout: page-private
-title: Studiare
+layout: default-bis
 ---
+
+# [Attività](index)
+
+## Studiare
 
 | what | how long |
 | --- | --- |
