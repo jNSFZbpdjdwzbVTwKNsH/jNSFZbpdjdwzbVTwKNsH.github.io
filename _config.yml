@@ -58,3 +58,6 @@ collections:
 
   attivita:
     output: true
+
+  todo:
+    output: true

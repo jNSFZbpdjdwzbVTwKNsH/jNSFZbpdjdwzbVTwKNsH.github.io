@@ -2,6 +2,7 @@
 layout: home
 ---
 
+## [todo!](todo)
 ## [riflessioni](riflessione)
 ## [attivita](attivita)
 ## [libri](libro)
