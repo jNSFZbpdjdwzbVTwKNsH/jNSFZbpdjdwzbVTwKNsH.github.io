@@ -11,6 +11,7 @@ layout: home
 ## [pensieri](pensiero)  
 ## [lettera](lettera)
 ## [Weav](weav)
-## [Estina](estina)
 ## [Monica](monica)
+## [Estina](estina)
 ## [Modella](modella)
+## [Nera](nera)
