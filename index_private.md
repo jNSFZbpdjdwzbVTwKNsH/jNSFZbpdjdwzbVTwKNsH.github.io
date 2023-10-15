@@ -8,6 +8,7 @@ layout: home
 ## [libri](libro)
 ## [poesie](poesia)  
 ## [diario](pagina)  
+## [settimanale](settimanale)
 ## [pensieri](pensiero)  
 ## [lettera](lettera)
 ## [Weav](weav)

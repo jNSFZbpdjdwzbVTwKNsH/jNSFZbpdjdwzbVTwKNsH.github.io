@@ -64,3 +64,6 @@ collections:
 
   nera:
     output: true
+
+  settimanale:
+    output: true
