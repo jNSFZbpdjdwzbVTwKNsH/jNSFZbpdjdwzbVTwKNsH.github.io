@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>APIMatch</title><!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="APIMatch" />
+<meta name="author" content="somebody" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="domanda: string risposta: string[] | null domanda_effettuata: string, [liked: number, neutral: number, disliked: number]" />
+<meta property="og:description" content="domanda: string risposta: string[] | null domanda_effettuata: string, [liked: number, neutral: number, disliked: number]" />
+<link rel="canonical" href="http://localhost:4000/weav/2023-07-12" />
+<meta property="og:url" content="http://localhost:4000/weav/2023-07-12" />
+<meta property="og:site_name" content="Somebody’s Blog!" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-11-01T19:20:15+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="APIMatch" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/weav/2023-07-12","headline":"APIMatch","dateModified":"2023-11-01T19:20:15+01:00","datePublished":"2023-11-01T19:20:15+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/weav/2023-07-12"},"author":{"@type":"Person","name":"somebody"},"description":"domanda: string risposta: string[] | null domanda_effettuata: string, [liked: number, neutral: number, disliked: number]","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Somebody's Blog!" /><link rel="shortcut icon" type="image/x-icon" href="/assets/logo.png" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body a="auto">
+  <main class="page-content" aria-label="Content">
+
+
+      <div class="w"><div class="topnav-container">
+<div class="topnav" id="topnav">
+  <!-- class="active" --> 
+  <a href="../">Home</a>
+  <a href="../poesia">Poesie</a>
+  <a href="../pagina">Diario</a>
+  <a href="../pensiero">Pensieri</a>
+</div>
+</div>
+
+<script src="../assets/js/top_bar.js"></script>
+<div class="spacer"></div>
+        <div class="rettangolo">
+        <h2>APIMatch</h2>
+<article class="body">
+<p>domanda: string<br />
+risposta: string[] | null<br />
+domanda_effettuata: string, [liked: number, neutral: number, disliked: number]</p>
+
+<p>Record&lt;domanda, risposta&gt;</p>
+
+<ol>
+  <li>
+    <p>APIMatch riceve il segnale di inizio e l’ID dell’evento a cui è riferita</p>
+  </li>
+  <li>
+    <p>APIMatch effettua una query su tutti i partecipanti all’evento</p>
+
+    <p>Da questo momento ogni nuovo partecipante è inoltrato da Python attraverso
+ l’endpoint <em>new_partecipant</em> =&gt; l’evento avrà bisogno di una flag
+ [ci starebbe fare un’API di smistamento degli utenti che cliccano “join event”, 
+ per evitare le flag e potre avere più tipologie di APIMatch]</p>
+  </li>
+  <li>
+    <p>Estrae una domanda a caso:
+fa un pop da “domande” e aggiunge la domanda così estratta in</p>
+  </li>
+  <li>
+    <p>Estrae le risposte dalla mappa “Record&lt;domanda, risposta&gt;”</p>
+  </li>
+  <li>
+    <p>Inoltra il form a ciascun partecipante,
+ogni volta che arriva un nuovo partecipante gli inoltra il form corrente</p>
+  </li>
+  <li>
+    <p>Il partecipante risponde alla domanda, poi valuta la domanda, i valori
+ammessi sono: mi piace, indifferente (o simile), non mi piace o simili.</p>
+  </li>
+  <li>
+    <p>Ogni volta che arriva una risposta alla APIMatch, l’API inserisce il 
+riferimento dell’utente nell’array che corrisponde alla risposta, e
+domanda_effettuata[value]++;</p>
+  </li>
+  <li>
+    <p>Ogni 30 minuti:</p>
+  </li>
+  <li>
+    <p>Si assegnano le persone nella stessa categoria tra loro</p>
+  </li>
+  <li>
+    <p>Si assegnano le persone rimaste fuori tra loro<br />
+[il mio ID sarà usato per mantenere il numero pari]</p>
+  </li>
+  <li>
+    <p>Sono inoltrati i match agli utenti</p>
+  </li>
+  <li>
+    <p>Si torna al punto 3</p>
+  </li>
+</ol>
+
+<p>Il loop è interrotto quanto arriva il segnale <em>end</em>.<br />
+I segnali <em>inizio</em>, <em>end</em> e <em>nuova_domanda</em> potrebbero essere triggerati o
+dal backend in modo automatico, oppure da telegram, manualmente.</p>
+
+<p>Alla fine dell’evento è inoltrato un ultimo form agli utenti, in cui si richiede
+un’opinione in merito all’evento. In questo caso, non chiediamo una valutazione.</p>
+
+<p>I form finali, oltre che ad essere salvati da qualche parte sul server, sono
+inoltrati su telegram in diretta (se ci sono idee carine, che potremmo voler
+approfondire, abbiamo modo di farlo).</p>
+
+</article>
+
+
+
+
+  <a class="page-link" href="/weav/index"
+	  data-toggle="tooltip" data-placement="top" title="Weav">weav seguente &rarr;</a>
+
+
+        </div>
+      </div>
+    </main><!--
+    
+    -->
+
+  </body>
+  <script async data-id="101414830" src="//static.getclicky.com/js"></script>
+</html>

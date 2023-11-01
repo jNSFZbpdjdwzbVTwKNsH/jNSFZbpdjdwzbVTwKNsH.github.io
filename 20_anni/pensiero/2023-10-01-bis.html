@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Music vs Robot</title><!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Music vs Robot" />
+<meta name="author" content="somebody" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Music vs Robot è un programmino che ho scritto con un mio compagno di uni, per il corso di programmazine ad oggetti. Mi è piaciuto molto sviluppare tale progetto: è stato molto divertente e sono molto soddisfatto del risultato finale. Mi è piaciuto talmente tanto che lo sto riscrivendo da capo (per la terza volta). In realtà, il codice così come l’avevamo scritto è molto ben organizzato, non ha bisogno di essere toccato, in modo alcuno (forse si può migliorare un pochino l’interfaccia grafica). Non ho intenzione di scriverlo in cpp, though. Invece, voglio rispolverare un linguaggio di programmazione che mi interessa molto di più (essendo il linguaggio sulla bocca di tutti): Rust." />
+<meta property="og:description" content="Music vs Robot è un programmino che ho scritto con un mio compagno di uni, per il corso di programmazine ad oggetti. Mi è piaciuto molto sviluppare tale progetto: è stato molto divertente e sono molto soddisfatto del risultato finale. Mi è piaciuto talmente tanto che lo sto riscrivendo da capo (per la terza volta). In realtà, il codice così come l’avevamo scritto è molto ben organizzato, non ha bisogno di essere toccato, in modo alcuno (forse si può migliorare un pochino l’interfaccia grafica). Non ho intenzione di scriverlo in cpp, though. Invece, voglio rispolverare un linguaggio di programmazione che mi interessa molto di più (essendo il linguaggio sulla bocca di tutti): Rust." />
+<link rel="canonical" href="http://localhost:4000/pensiero/2023-10-01-bis" />
+<meta property="og:url" content="http://localhost:4000/pensiero/2023-10-01-bis" />
+<meta property="og:site_name" content="Somebody’s Blog!" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-10-01T00:00:00+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Music vs Robot" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/pensiero/2023-10-01-bis","headline":"Music vs Robot","dateModified":"2023-10-01T00:00:00+02:00","datePublished":"2023-10-01T00:00:00+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pensiero/2023-10-01-bis"},"author":{"@type":"Person","name":"somebody"},"description":"Music vs Robot è un programmino che ho scritto con un mio compagno di uni, per il corso di programmazine ad oggetti. Mi è piaciuto molto sviluppare tale progetto: è stato molto divertente e sono molto soddisfatto del risultato finale. Mi è piaciuto talmente tanto che lo sto riscrivendo da capo (per la terza volta). In realtà, il codice così come l’avevamo scritto è molto ben organizzato, non ha bisogno di essere toccato, in modo alcuno (forse si può migliorare un pochino l’interfaccia grafica). Non ho intenzione di scriverlo in cpp, though. Invece, voglio rispolverare un linguaggio di programmazione che mi interessa molto di più (essendo il linguaggio sulla bocca di tutti): Rust.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Somebody's Blog!" /><link rel="shortcut icon" type="image/x-icon" href="/assets/logo.png" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body a="auto">
+  <main class="page-content" aria-label="Content">
+
+
+      <div class="w"><div class="topnav-container">
+<div class="topnav" id="topnav">
+  <!-- class="active" --> 
+  <a href="../">Home</a>
+  <a href="../poesia">Poesie</a>
+  <a href="../pagina">Diario</a>
+  <a href="../pensiero">Pensieri</a>
+</div>
+</div>
+
+<script src="../assets/js/top_bar.js"></script>
+<div class="spacer"></div>
+        <div class="rettangolo">
+        <h2>Music vs Robot</h2>
+<article class="body">
+<p><a href="https://github.com/danesinoo/music_vs_robot">Music vs Robot</a> è un programmino
+che ho scritto con un mio compagno di uni, per il corso di programmazine ad 
+oggetti. Mi è piaciuto molto sviluppare tale progetto: è stato molto divertente
+e sono molto soddisfatto del risultato finale. Mi è piaciuto talmente tanto che
+lo sto riscrivendo da capo (per la terza volta).<br />
+In realtà, il codice così come l’avevamo scritto è molto ben organizzato, non ha
+bisogno di essere toccato, in modo alcuno (forse si può migliorare un pochino
+l’interfaccia grafica). Non ho intenzione di scriverlo in cpp, though. Invece,
+voglio rispolverare un linguaggio di programmazione che mi interessa molto di
+più (essendo il linguaggio sulla bocca di tutti): 
+<a href="https://www.rust-lang.org/">Rust</a>.</p>
+
+<p>Rust è stato il secondo linguaggio di programmazione sopra cui mi sono
+cimentato. Tuttavia, fino a che non ho completato il corso di programmazine ad
+oggetti, ho mantenuto delle lacune piuttosto ampie (e mi piacerebbe chiudere
+ulteriori lacune con calma). Mi riferisco al
+<a href="https://it.wikipedia.org/wiki/Polimorfismo_(informatica)">polimorfismo</a>, che
+non ho minimamente approfondito nello studio di Rust, perchè è l’argomento di
+studio principale di programmazine ad oggetti. Avendo studiato il polimorfismo
+(applicato a cpp), sono in grado di sfruttare il polimorfismo in Rust, in
+teoria. Sto riscrivendo Music vs Robot in Rust proprio per essere sicuro del
+passaggio logico.</p>
+
+<p>In realtà, Rust è un linguaggio più sicuro di cpp. Che cosa
+intendo con più sicuro? Il codice che ho scritto in cpp la prima volta andava in
+segmentation fault, senza che ne comprendessi il motivo; ovvero il programma si
+chiudeva di punto in bianco. Ho provato a cercare la riga di codice colpevole
+del malanno per quasi una settimana senza successo. Così, con calma, durante le
+vacanze ho riscritto da capo l’intero codice. Ovviamente, dato che ho riscritto
+da capo l’intero codice, l’ho riorganizzato e l’ho strutturato un po’ meglio.<br />
+Rust è più sicuro di cpp, perchè questo tipo di errore non si può verificare.
+Non tutto è oro quel che luccica: per evitare questa tipologia di errore Rust
+impone un modello di programmazione un pochino meno flessibile rispetto a cpp,
+in modo tale da assicurare la stabilità e la robustezza del programma. Qualche
+video su youtube (di persone che lavorano nel campo dell’informatica da qualche
+decennio), spiega che queste limitazioni sono dovute ad un miglior modo di
+programmare; ovvero sia in Rust è imposto, e in cpp dovrebbe essere
+imposto.<br />
+Quindi io parto da del codice in cpp, abbastanza ben organizzato e lo riporto in
+Rust, mantenendo la medesima organizzazione del codice, ma cambiando le cose che
+hanno bisogno di essere cambiate (<strong>mutatis mutandis</strong>, letteralmente), a causa
+delle imposizioni maggiori del secondo linguaggio. In modo tale da
+familiarizzare con “la buona programmazione”, o quantomeno provarci.</p>
+
+<p>Sto riscrivendo il codice in Rust anche perchè voglio imparare un pochino di
+html, il linguaggio per scrivere le pagine web.<br />
+Il programma che ho scritto per l’uni va compilato nel proprio dispositivo. 
+Questo
+processo, tendenzialmente è lungo e tedioso. Riscrivendo il programma per il
+web, diventa possibile giocare  a <strong>Music vs Robot</strong> direttamente dal browser,
+collegandosi a qualche url (so già come mettere il tutto online, for free,
+quando il progetto è completo). Fondamentalmente sto costruendo il mio
+portfolio.<br />
+Il problema di html è che non mi piace niente. Per cui, provo ad unire Rust ad
+esso in modo tale da renderlo un po’ più entusiasmante, forse. Vorrei imparare
+ad usare <a href="https://www.leptos.dev/">leptos</a>, per essere in grado di visualizzare
+tale programma.</p>
+
+</article>
+
+
+
+  <a class="page-link" href="/pensiero/2023-09-28"
+	  data-toggle="tooltip" data-placement="top" title="Nuovo anno">&larr; pensiero precedente</a>
+
+
+  <a class="page-link" href="/pensiero/2023-10-01"
+	  data-toggle="tooltip" data-placement="top" title="Todo List">pensiero seguente &rarr;</a>
+
+
+        </div>
+      </div>
+    </main><!--
+    
+    -->
+
+  </body>
+  <script async data-id="101414830" src="//static.getclicky.com/js"></script>
+</html>
