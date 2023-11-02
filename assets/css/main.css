@@ -59,8 +59,7 @@ body {
 nav {
 	border: 3px solid #ef7c59;
 	border-radius:25px;
-	background-color: rgba(255, 175, 143, 0.5);
-	backdrop-filter: blur(50px); /* Adjust the blur value as desired */
+	background-color: rgba(255, 175, 143, 0.95);
 	position: fixed;
 	z-index: 1000;
 	top: 2rem;
@@ -119,8 +118,7 @@ h2 {
 	padding-left: 2rem;
 	padding-right: 2rem;
 	padding-bottom: 2rem;
-	background-color: rgba(255, 175, 143, 0.5);
-	backdrop-filter: blur(50px); /* Adjust the blur value as desired */
+	background-color: rgba(255, 175, 143, 0.95);
 }
 
 .content-links {
