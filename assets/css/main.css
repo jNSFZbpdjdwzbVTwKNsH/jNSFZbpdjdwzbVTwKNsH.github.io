@@ -40,6 +40,14 @@ body {
  * HOME PAGE
  */
 
+.homepage-title {
+	text-align: center;
+}
+
+.homepage-content {
+	text-align: center;
+}
+
 .homepage-links {
 	list-style-type: none;
 	font-size: 1.5rem;
