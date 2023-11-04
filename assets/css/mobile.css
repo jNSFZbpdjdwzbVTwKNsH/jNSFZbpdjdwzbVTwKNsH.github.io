@@ -7,8 +7,8 @@ body {
 	background-repeat: repeat-y;
 	background-size: 100% auto;
 	height: 100%;
-	display: grid;
-	place-items: center;
+	display: flex;
+    justify-content: center;	
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -21,19 +21,7 @@ body {
 }
 
 .mobile {
-	display: none;
-}
-
-@media (min-width: 600px) {
-    .desktop {
-        display: block;
-    }
-}
-
-@media (max-width: 599px) {
-	.mobile {
-		display: block;
-	}
+	display: block;
 }
 
 /*
@@ -70,12 +58,7 @@ nav {
 	background-color: rgba(255, 175, 143, 0.95);
 	z-index: 1000;
 	position: fixed;
-	@media (min-width: 600px) {
-		top: 2rem;
-	}
-	@media (max-width: 599px){
-		bottom: 2rem;
-	}
+	bottom: 2rem;
 	margin: 0 auto;
 	padding: 0 2rem 0 0;
 }
@@ -123,12 +106,7 @@ h2 {
 }
 
 .paragrafo {
-	margin-top: 8rem;
-	width: 70%;
-	@media (max-width: 599px) {
-		width: 100%;
-	}
-	border: 3px solid #ef7c59;
+	width: 100%;
 	border-radius:25px;
 	padding-top: 2px;
 	padding-left: 2rem;
