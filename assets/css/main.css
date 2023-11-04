@@ -68,9 +68,14 @@ nav {
 	border: 3px solid #ef7c59;
 	border-radius:25px;
 	background-color: rgba(255, 175, 143, 0.95);
-	position: fixed;
 	z-index: 1000;
-	top: 2rem;
+	position: fixed;
+	@media (min-width: 600px) {
+		top: 2rem;
+	}
+	@media (max-width: 599px){
+		bottom: 2rem;
+	}
 	margin: 0 auto;
 	padding: 0 2rem 0 0;
 }
@@ -86,11 +91,14 @@ nav ul li {
 	display: inline;
 	font-size: 1.2rem;
 	decoration: none;
-	padding: 1rem;
-	border-radius: 25px;
 }
 
-nav ul li:hover {
+nav ul li a {
+	border-radius: 25px;
+	padding: 1rem;
+}
+
+nav ul li a:hover {
 	background-color: rgba(255, 255, 255, 0.5);
 }
 
