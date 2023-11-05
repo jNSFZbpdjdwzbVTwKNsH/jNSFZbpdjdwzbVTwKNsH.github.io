@@ -16,24 +16,10 @@ body {
  * SCREEN SIZES
  */
 
-.desktop {
-	display: block;
-}
+.desktop {}
 
 .mobile {
 	display: none;
-}
-
-@media (min-width: 768px) {
-    .desktop {
-        display: block;
-    }
-}
-
-@media (max-width: 767px) {
-	.mobile {
-		display: block;
-	}
 }
 
 /*
@@ -61,7 +47,7 @@ body {
 }
 
 /*
- * NAVIGATION
+ * navigation
  */
 
 nav {
