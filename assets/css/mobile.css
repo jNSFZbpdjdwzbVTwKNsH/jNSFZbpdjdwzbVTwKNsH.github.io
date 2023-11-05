@@ -1,15 +1,16 @@
 html { background: #ff8c69; }
 
-html { height: 100%; }
+html { height: 100%; width: 100%; }
 
 body {
 	background-image: url("../img/sfondo.png");
 	background-repeat: repeat-y;
 	background-size: 100% auto;
 	height: 100%;
-	display: flex;
-    justify-content: center;	
 	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 /*
@@ -61,6 +62,19 @@ nav {
 	bottom: 2rem;
 	margin: 0 auto;
 	padding: 0 2rem 0 0;
+	transition: bottom 0.3s;
+}
+
+.navbar-hidden {
+	border: 3px solid #ef7c59;
+	border-radius:25px;
+	background-color: rgba(255, 175, 143, 0.95);
+	z-index: 1000;
+	position: fixed;
+	bottom: -7rem;
+	margin: 0 auto;
+	padding: 0 2rem 0 0;
+	transition: bottom 0.3s;
 }
 
 nav ul {
@@ -106,13 +120,15 @@ h2 {
 }
 
 .paragrafo {
-	width: 100%;
 	border-radius:25px;
-	padding-top: 2px;
-	padding-left: 2rem;
-	padding-right: 2rem;
-	padding-bottom: 2rem;
+	min-width: 95%;
+	padding: 1rem;
 	background-color: rgba(255, 175, 143, 0.95);
+	margin-bottom: 6rem;
+}
+
+.paragrafo a {
+	padding: 1rem;
 }
 
 .content-links {
@@ -120,4 +136,3 @@ h2 {
 	font-size: 1rem;
 	line-height: 2.5rem;
 }
-

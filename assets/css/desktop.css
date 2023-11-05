@@ -73,6 +73,19 @@ nav {
 	top: 2rem;
 	margin: 0 auto;
 	padding: 0 2rem 0 0;
+	transition: top 0.3s;
+}
+
+.navbar-hidden {
+	border: 3px solid #ef7c59;
+	border-radius:25px;
+	background-color: rgba(255, 175, 143, 0.95);
+	z-index: 1000;
+	position: fixed;
+	top: -7rem;
+	margin: 0 auto;
+	padding: 0 2rem 0 0;
+	transition: top 0.3s;
 }
 
 nav ul {
