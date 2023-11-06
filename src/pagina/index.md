@@ -1,4 +1,4 @@
 ---
 layout: list
-title: Pagina
+title: Diario
 ---
