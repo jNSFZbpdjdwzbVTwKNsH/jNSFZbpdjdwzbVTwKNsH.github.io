@@ -1,4 +1,4 @@
 --- 
 layout: list
-title: pensiero
+title: Pensieri
 ---

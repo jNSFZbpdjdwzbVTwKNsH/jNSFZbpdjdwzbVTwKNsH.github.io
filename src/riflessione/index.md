@@ -1,4 +1,4 @@
 --- 
 layout: list-private
-title: riflessione
+title: Riflessioni
 ---
