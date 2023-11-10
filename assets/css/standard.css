@@ -1,0 +1,80 @@
+html { background: #ff8c69; }
+
+html { height: 100%; }
+
+/*
+ * HOME PAGE
+ */
+
+.homepage-h1 {
+	text-align: center;
+}
+
+.homepage-content {
+	text-align: center;
+}
+
+.homepage-links {
+	list-style-type: none;
+	font-size: 1.5rem;
+	font-weight: bold;
+	line-height: 3rem;
+}
+
+.homepage-video {
+	width: 30%;
+	padding: 0 34% 0 34%;
+}
+
+/*
+ * navigation
+ */
+
+nav ul {
+	list-style-type: none;
+	font-weight: bold;
+	text-decoration: none;
+	display: flex;
+	flex-grow: 1;
+	flex-direction: row;
+}
+
+nav ul li {
+	font-size: 1.2rem;
+	decoration: none;
+}
+
+nav ul li a {
+	border-radius: 25px;
+	padding: 1rem;
+}
+
+nav ul li a:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.previous-page, .next-page {
+	text-decoration: none;
+}
+
+/*
+ *
+ */
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: bold;
+	text-indent: 1rem;
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: bold;
+	text-indent: 1rem;
+}
+
+.content-links {
+	list-style-type: none;
+	font-size: 1rem;
+	line-height: 2.5rem;
+}
