@@ -78,3 +78,8 @@ h2 {
 	font-size: 1rem;
 	line-height: 2.5rem;
 }
+
+.diary-entry {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+}
