@@ -2,7 +2,7 @@
 layout: default-bis
 ---
 
-# [Attività](index)
+# [Attività](attivita/index)
 
 ## Casa
 
