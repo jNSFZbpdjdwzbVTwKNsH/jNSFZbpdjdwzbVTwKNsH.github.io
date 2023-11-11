@@ -73,6 +73,10 @@ h2 {
 	text-indent: 1rem;
 }
 
+p {
+	line-height: 1.5rem;
+}
+
 .content-links {
 	list-style-type: none;
 	font-size: 1rem;
