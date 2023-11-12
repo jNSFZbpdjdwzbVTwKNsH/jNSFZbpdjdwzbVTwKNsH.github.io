@@ -59,9 +59,6 @@ nav {
 	width: 70%;
 	border: 3px solid #ef7c59;
 	border-radius:25px;
-	padding-top: 2px;
-	padding-left: 2rem;
-	padding-right: 2rem;
-	padding-bottom: 2rem;
+	padding: 2rem;
 	background-color: rgba(255, 175, 143, 0.95);
 }

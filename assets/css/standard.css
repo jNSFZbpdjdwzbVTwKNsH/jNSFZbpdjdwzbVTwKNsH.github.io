@@ -23,7 +23,12 @@ html { height: 100%; }
 
 .homepage-video {
 	width: 30%;
-	padding: 0 34% 0 34%;
+	margin: 10px; /* Adjust the margin size as needed */
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	border-radius: 25px;
+	border: 3px solid #ef7c59;
 }
 
 /*
