@@ -2,6 +2,7 @@ body {
 	background-image: url("../img/sfondo.png");
 	background-repeat: repeat-y;
 	background-size: 100% auto;
+	min-height: 100%;
 	font-family: 'Roboto', sans-serif;
 	display: flex;
 	flex-direction: column;
