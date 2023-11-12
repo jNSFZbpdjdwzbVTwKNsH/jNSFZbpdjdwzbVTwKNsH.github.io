@@ -73,6 +73,12 @@ h2 {
 	text-indent: 1rem;
 }
 
+h3 {
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-indent: 1rem;
+}
+
 p {
 	line-height: 1.5rem;
 }
@@ -86,4 +92,11 @@ p {
 .diary-entry {
 	display: grid;
 	grid-template-columns: repeat(7, 1fr);
+}
+
+hr {
+  border: none; /* Rimuovi il bordo predefinito */
+  height: 0.1rem; /* Imposta l'altezza della linea */
+  background-color: #333; /* Colore di sfondo della linea */
+  margin: 2rem 2rem; /* Spazio sopra e sotto la linea */
 }
