@@ -112,3 +112,9 @@ table,th,td {
 	border-collapse:collapse;
 	padding:0.4rem
 }
+
+.paragrafo input[type="checkbox"]:disabled {
+    margin-right: 1rem;
+    color: #000;
+    border-color: #000;
+}
