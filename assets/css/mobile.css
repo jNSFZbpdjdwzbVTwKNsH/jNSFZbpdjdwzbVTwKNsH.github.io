@@ -1,3 +1,4 @@
+/*
 body {
 	background-image: url("../img/sfondo.png");
 	background-repeat: repeat-y;
@@ -11,7 +12,6 @@ body {
 
 /*
  * SCREEN SIZES
- */
 
 .desktop {
 	display: none;
@@ -25,7 +25,6 @@ body {
 
 /*
  * NAVIGATION
- */
 
 nav {
 	border: 3px solid #ef7c59;
@@ -53,7 +52,6 @@ nav {
 
 /*
  *
- */
 
 .paragrafo {
 	border-radius:25px;
@@ -62,3 +60,4 @@ nav {
 	background-color: rgba(255, 175, 143, 0.95);
 	margin-bottom: 6rem;
 }
+ */
