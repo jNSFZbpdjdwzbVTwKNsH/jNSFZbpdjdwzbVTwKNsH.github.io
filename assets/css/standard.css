@@ -19,6 +19,8 @@
         --textSize: 1.2rem;
         --heading1Size: 2rem;
         --heading2Size: 1.4rem;
+        --heading3Size: 1.3rem;
+        --heading4Size: 1.2rem;
         --shortContent: 100%;
         --content: 100%;
     }
@@ -31,6 +33,8 @@
         --textSize: 1.5rem;
         --heading1Size: 2.5rem;
         --heading2Size: 2rem;
+        --heading3Size: 1.8rem;
+        --heading4Size: 1.6rem;
         --shortContent: 55%;
         --content: 90%;
     }
@@ -43,6 +47,8 @@
         --textSize: 1.8rem;
         --heading1Size: 3rem;
         --heading2Size: 2.2rem;
+        --heading3Size: 2rem;
+        --heading4Size: 1.9rem;
         --shortContent: 42%;
         --content: 80%;
     }
@@ -55,6 +61,8 @@
         --textSize: 2rem;
         --heading1Size: 3.5rem;
         --heading2Size: 2.5rem;
+        --heading3Size: 2.3rem;
+        --heading4Size: 2.1rem;
         --shortContent: 36%;
         --content: 70%;
     }
@@ -86,6 +94,20 @@ h2 {
     margin-bottom: 1rem;
     font-size: var(--heading2Size);
     text-align: center;
+}
+
+h3 {
+    line-height: calc(1.5 * var(--heading3Size));
+    color: var(--oneColor);
+    margin-bottom: 1rem;
+    font-size: var(--heading3Size);
+}
+
+h4 {
+    line-height: calc(1.5 * var(--heading4Size));
+    color: var(--oneColor);
+    margin-bottom: 1rem;
+    font-size: var(--heading4Size);
 }
 
 a {
