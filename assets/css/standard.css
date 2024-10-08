@@ -381,3 +381,19 @@ li:has(input[type=checkbox]) {
         --o: 1;
     }
 }
+
+/* --------- Blockquote --------- */
+
+blockquote {
+    margin: 0;
+    padding: 0 0.5rem;
+    border-left: 0.5rem solid var(--oneColor);
+    background-color: var(--backgroundColor);
+    font-style: italic;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+
