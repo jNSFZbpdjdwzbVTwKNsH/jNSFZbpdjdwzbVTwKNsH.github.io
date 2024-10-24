@@ -1,5 +1,6 @@
 :root {
     --backgroundColor: #EDE3E4;
+    --backgroundColorDarker: #D5CCCD;
     --textColor: #333;
     --oneColor: #691B25;
     --twoColor: #608F3B;
@@ -387,9 +388,12 @@ li:has(input[type=checkbox]) {
 blockquote {
     margin: 0;
     padding: 0 0.5rem;
+    jorder: 0.1rem solid #DEDADA;
     border-left: 0.5rem solid var(--oneColor);
     background-color: var(--backgroundColor);
     font-style: italic;
+    border-radius: var(--round-radius);
+    background-color: var(--backgroundColorDarker);
 }
 
 blockquote p {
