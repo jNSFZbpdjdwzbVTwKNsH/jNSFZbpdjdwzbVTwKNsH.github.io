@@ -244,6 +244,11 @@ hr {
 
 /* Home */
 
+.short-content {
+    width: var(--shortContent);
+    margin: 0 auto;
+}
+
 #home-video {
     width: var(--shortContent);
     margin: 0 auto;
@@ -388,7 +393,7 @@ li:has(input[type=checkbox]) {
 blockquote {
     margin: 0;
     padding: 0 0.5rem;
-    jorder: 0.1rem solid #DEDADA;
+    border: 0.1rem solid #DEDADA;
     border-left: 0.5rem solid var(--oneColor);
     background-color: var(--backgroundColor);
     font-style: italic;
@@ -398,4 +403,23 @@ blockquote {
 
 blockquote p {
     margin: 0;
+}
+
+button{
+    display: block;
+    text-decoration: none;
+    font-size: 150%;
+    color: var(--oneColor);
+    padding: 0.8rem;
+    border: 0.1rem solid var(--oneColor);
+    border-radius: var(--round-radius);
+    transition: all 0.3s;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+button:hover {
+    background-color: var(--oneColor);
+    color: var(--backgroundColor);
 }
