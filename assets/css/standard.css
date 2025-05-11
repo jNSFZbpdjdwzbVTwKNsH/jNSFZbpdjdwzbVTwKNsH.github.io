@@ -217,6 +217,10 @@ p:has(img) {
     text-align: center;
 }
 
+iframe {
+    margin: 0.5rem auto;
+}
+
 img, video {
     max-width: var(--content);
     height: auto;
@@ -422,4 +426,23 @@ button{
 button:hover {
     background-color: var(--oneColor);
     color: var(--backgroundColor);
+}
+
+.align-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: var(--textSize);
+}
+
+.align-two li a {
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }

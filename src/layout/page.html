@@ -3,11 +3,16 @@
 use head
 
 <body>
-use page-navbar
+    use page-navbar
 
     <main>
         <h1 id="main-title"> {{ title }} </h1>
         {{ content }}
+        <hr>
+        <ul class="align-two">
+            <li><a href="{{ previous-page }}"> &larr; PREVIOUS </a></li>
+            <li><a href="{{ next-page }}"> NEXT &rarr; </a></li>
+        </ul>
     </main>
     <footer>
         <script async data-id="101414830" src="//static.getclicky.com/js"></script>
