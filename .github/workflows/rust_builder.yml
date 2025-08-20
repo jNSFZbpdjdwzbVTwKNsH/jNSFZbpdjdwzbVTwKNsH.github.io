@@ -41,25 +41,10 @@ jobs:
       - name: Convert markdown files to HTML
         run: |
           cd converter
-          # Find and convert all markdown files in the parent directory
-          find .. -name "*.md" -type f | while read mdfile; do
-            echo "Processing: $mdfile"
-            cargo run --release -- "$mdfile"
-          done
-
-      # Check if there are any changes to commit
-      - name: Check for changes
-        id: git-check
-        run: |
-          if [ -n "$(git status --porcelain)" ]; then
-            echo "changes=true" >> $GITHUB_OUTPUT
-          else
-            echo "changes=false" >> $GITHUB_OUTPUT
-          fi
+          cargo run --release -s ../ -o ./_site
 
       # Commit and push generated HTML files
       - name: Commit HTML files
-        if: steps.git-check.outputs.changes == 'true'
         run: |
           git config --local user.email "github-action@users.noreply.github.com"
           git config --local user.name "GitHub Action"
