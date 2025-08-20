@@ -1,0 +1,68 @@
+name: Convert Markdown to HTML
+on:
+  push:
+    paths:
+      - '**.md'
+  pull_request:
+    paths:
+      - '**.md'
+  workflow_dispatch:
+
+jobs:
+  convert-markdown:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout your main repository (where markdown files are)
+      - name: Checkout main repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Checkout the rossoc.github.io repository (where the program is)
+      - name: Checkout markdown converter
+        uses: actions/checkout@v4
+        with:
+          repository: rossoc/rossoc.github.io
+          path: converter
+
+      # Install Rust toolchain
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: stable
+
+      # Build the converter for better performance
+      - name: Build converter
+        run: |
+          cd converter
+          cargo build --release
+
+      # Convert all markdown files in the main repository
+      - name: Convert markdown files to HTML
+        run: |
+          cd converter
+          # Find and convert all markdown files in the parent directory
+          find .. -name "*.md" -type f | while read mdfile; do
+            echo "Processing: $mdfile"
+            cargo run --release -- "$mdfile"
+          done
+
+      # Check if there are any changes to commit
+      - name: Check for changes
+        id: git-check
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "changes=false" >> $GITHUB_OUTPUT
+          fi
+
+      # Commit and push generated HTML files
+      - name: Commit HTML files
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config --local user.email "github-action@users.noreply.github.com"
+          git config --local user.name "GitHub Action"
+          git add *.html **/*.html  # Add all generated HTML files
+          git commit -m "Auto-convert markdown to HTML [skip ci]"
+          git push
