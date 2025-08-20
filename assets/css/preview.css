@@ -1,0 +1,140 @@
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+    :root {
+        --heading1Size: 3rem;
+        --heading2Size: 2.2rem;
+        --heading3Size: 2rem;
+        --heading4Size: 1.9rem;
+        --shortContent: 42%;
+        --content: 80%;
+    }
+}
+
+/* --------- BIG SCREEN BREAKPOINT --------- */
+
+@media screen and (min-width: 1201px) {
+    :root {
+        --heading1Size: 3.5rem;
+        --heading2Size: 2.5rem;
+        --heading3Size: 2.3rem;
+        --heading4Size: 2.1rem;
+        --shortContent: 36%;
+        --content: 90%;
+    }
+}
+
+:root {
+    --decorations-width: 14px;
+}
+
+hr {
+    margin-top: 50vw;
+}
+
+.clickable-area {
+    cursor: pointer;
+	position: fixed;
+	z-index: 100;
+	background-color: var(--oneColor);
+	border-radius: 10px;
+    transition: var(--transition);
+}
+
+.clickable-area:hover {
+	background-color: var(--oneColorHighlight);
+}
+
+#top {
+	top: 5px;
+	left: 10%;
+	width: 80%;
+	height: var(--decorations-width);
+}
+
+#bottom {
+	bottom: 5px;
+	left: 10%;
+	width: 80%;
+	height: var(--decorations-width);
+}
+
+body main .content { /* // *:not(hr, h1, h2, h3, h4) { */
+    max-width: var(--content);
+    margin: 0 auto;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+main p, main li {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+img, video {
+    box-shadow: none;
+    border-radius: 0;
+    max-height: 70vh;
+    max-width: 90vw;
+}
+
+table {
+    margin: 3rem auto;
+}
+
+main {
+    padding-bottom: 50vw;
+}
+
+ul li, ol li {
+    line-height: 180%;
+}
+
+#home-links {
+    margin-top: 10vw;
+}
+
+#theme-button {
+    background: transparent;
+    position: fixed;
+	z-index: 100;
+    bottom: 1%;
+	left: 2%;
+    color: var(--oneColor);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+#theme-button:hover {
+    color: var(--oneColorHighlight);
+}
+
+#theme-button svg {
+    width: 30px;
+    height: 30px;
+}
+
+#theme-button:active {
+    transform: scale(0.9);
+}
+
+@media (prefers-color-scheme: light) {
+    .light {
+        display: none;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .dark {
+        display: none;
+    }
+}
+
+footer .menu {
+    gap: 0;
+}
+
+h1 {
+    margin-top: 1rem;
+}
