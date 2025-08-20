@@ -31,17 +31,11 @@ jobs:
         with:
           toolchain: stable
 
-      # Build the converter for better performance
-      - name: Build converter
-        run: |
-          cd converter
-          cargo build --release
-
       # Convert all markdown files in the main repository
       - name: Convert markdown files to HTML
         run: |
           cd converter
-          cargo run --release -s ../ -o ./_site
+          cargo run -- -s ../ -o ./_site
 
       # Commit and push generated HTML files
       - name: Commit HTML files
