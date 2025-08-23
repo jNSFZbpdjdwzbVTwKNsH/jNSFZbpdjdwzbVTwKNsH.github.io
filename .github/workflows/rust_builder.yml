@@ -32,6 +32,10 @@ jobs:
         run: |
             cd charta
             cargo run -- -s ./.. -o ../_site
+      - name: Show changes for debugging
+        run: |
+          git status
+          git diff
       - name: Upload static files as artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3
