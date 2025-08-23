@@ -37,10 +37,9 @@ jobs:
           git status
           git diff
       - name: Upload static files as artifact
-        id: deployment
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '_site'
+          path: ./_site
 
   deploy:
       environment:
