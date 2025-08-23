@@ -1,0 +1,1 @@
+[![Charta workflow](https://github.com/jNSFZbpdjdwzbVTwKNsH/jNSFZbpdjdwzbVTwKNsH.github.io/actions/workflows/rust_builder.yml/badge.svg)](https://github.com/jNSFZbpdjdwzbVTwKNsH/jNSFZbpdjdwzbVTwKNsH.github.io/actions/workflows/rust_builder.yml)
