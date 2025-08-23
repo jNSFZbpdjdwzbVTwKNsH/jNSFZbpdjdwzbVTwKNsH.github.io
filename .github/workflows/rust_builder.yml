@@ -1,47 +1,50 @@
-name: Convert Markdown to HTML
+name: Charta workflow
+
 on:
   push:
-    paths:
-      - '**.md'
-  pull_request:
-    paths:
-      - '**.md'
-  workflow_dispatch:
+    branches: ["main"]
+  
+
+permissions:
+  contents: write
+  deployments: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
-  convert-markdown:
+  build:
     runs-on: ubuntu-latest
     steps:
-      # Checkout your main repository (where markdown files are)
-      - name: Checkout main repository
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Checkout Charta
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      # Checkout the rossoc.github.io repository (where the program is)
-      - name: Checkout markdown converter
-        uses: actions/checkout@v4
-        with:
-          repository: rossoc/rossoc.github.io
-          path: converter
-
-      # Install Rust toolchain
-      - name: Install Rust
-        uses: dtolnay/rust-toolchain@stable
-        with:
-          toolchain: stable
-
-      # Convert all markdown files in the main repository
-      - name: Convert markdown files to HTML
+          repository: rossoc/Charta
+          path: ./charta
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Build static HTML
         run: |
-          cd converter
-          cargo run -- -s ../ -o ./_site
+            cd charta
+            cargo run -s ./.. -o ../_site
+      - name: Upload static files as artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_site'
 
-      # Commit and push generated HTML files
-      - name: Commit HTML files
-        run: |
-          git config --local user.email "github-action@users.noreply.github.com"
-          git config --local user.name "GitHub Action"
-          git add *.html **/*.html  # Add all generated HTML files
-          git commit -m "Auto-convert markdown to HTML [skip ci]"
-          git push
+  deploy:
+      environment:
+        name: github-pages
+        url: ${{ steps.deployment.outputs.page_url }}
+      runs-on: ubuntu-latest
+      needs: build
+      steps:
+        - name: Deploy to GitHub Pages
+          id: deployment
+          uses: actions/deploy-pages@v4
