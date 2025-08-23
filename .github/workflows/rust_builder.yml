@@ -26,12 +26,12 @@ jobs:
         with:
           repository: rossoc/Charta
           path: ./charta
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-      - name: Build static HTML
+      - name: Compile Charta
         run: |
-            cd charta
-            cargo run -- -s ./.. -o ../_site
+            cd charta && cargo build
+      - name: Build HTML
+        run: |
+            ./charta/target/debug/Charta
       - name: Show changes for debugging
         run: |
           git status
@@ -39,7 +39,11 @@ jobs:
       - name: Upload static files as artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./_site
+          path: _site
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        with:
+          build-output: _site
 
   deploy:
       environment:
