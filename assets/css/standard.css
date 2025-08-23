@@ -503,7 +503,7 @@ img, video {
 
 #home-main {
     margin: calc(4 * var(--textSize)) auto 0 auto;
-    padding: var(--heading2Size);
+    padding: 0;
     background-color: var(--backgroundColorHighlight);
     border-radius: var(--round-radius);
     width: var(--shortContent);
@@ -526,7 +526,8 @@ img, video {
     margin: 0;
 }
 
-#home-main img {
+#home-main svg {
+    color: var(--oneColor);
     margin: var(--textSize) auto 0 auto;
     border-radius: var(--round-radius);
 }
@@ -776,8 +777,7 @@ footer .menu li a:hover:before {
     align-items: center;
     list-style: none;
     padding: 0;
-    margin: 0;
-    margin-top: var(--textSize);
+    margin: var(--textSize) 0;
 }
 
 .align-two li a {
