@@ -31,7 +31,7 @@ jobs:
       - name: Build static HTML
         run: |
             cd charta
-            cargo run -s ./.. -o ../_site
+            cargo run -- -s ./.. -o ../_site
       - name: Upload static files as artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3
