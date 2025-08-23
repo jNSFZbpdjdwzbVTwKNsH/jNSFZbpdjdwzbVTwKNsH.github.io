@@ -31,7 +31,7 @@ jobs:
             cd scripta && cargo build
       - name: Build HTML
         run: |
-            ./scripta/target/debug/scripta
+            ./scripta/target/debug/Scripta
       - name: Show changes for debugging
         run: |
           git status
@@ -42,8 +42,6 @@ jobs:
           path: _site
       - name: Setup Pages
         uses: actions/configure-pages@v4
-        with:
-          build-output: _site
 
   deploy:
       environment:
